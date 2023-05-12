@@ -317,7 +317,7 @@ var keystone_default = withAuth(
       //   for more information on what database might be appropriate for you
       //   see https://keystonejs.com/docs/guides/choosing-a-database#title
       provider: "mysql",
-      url: "mysql://root:bummer666@localhost:3306/keystone"
+      url: `${process.env.DATABASE_URL}`
     },
     lists,
     session
