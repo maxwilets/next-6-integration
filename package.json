@@ -18,5 +18,8 @@
     "@keystone-6/cloudinary": "7.0.0",
     "typescript": "^4.9.5",
     "next": "13.3.4"
+  },
+  "envs": {
+  "key": "DATABASE_URL"
   }
 }
