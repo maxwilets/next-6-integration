@@ -24,7 +24,7 @@ import { statelessSessions } from '@keystone-6/core/session';
 // for a stateless session, a SESSION_SECRET should always be provided
 //   especially in production (statelessSessions will throw if SESSION_SECRET is undefined)
 let sessionSecret = process.env.SESSION_SECRET;
-if (!sessionSecret && process.env.NODE_ENV !== 'production') {
+if (!sessionSecret) {
   sessionSecret = randomBytes(32).toString('hex');
 }
 
