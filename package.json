@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "private": true,
   "scripts": {
-    "dev": "keystone dev",
+    "dev": "keystone prisma migrate dev",
     "postinstall": "keystone postinstall",
     "generate": "keystone prisma migrate dev",
     "start": "keystone start --with-migrations",
