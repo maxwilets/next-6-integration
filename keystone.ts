@@ -29,6 +29,7 @@ export default withAuth(
       //   see https://keystonejs.com/docs/guides/choosing-a-database#title
       provider: 'mysql',
       url: process.env.DATABASE_URL,
+      useMigrations: true,
     },
     lists,
     session,
