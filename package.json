@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "keystone dev",
-    "start": "keystone start",
+    "postinstall": "keystone postinstall",
+    "generate": "keystone prisma migrate dev",
+    "start": "keystone start --with-migrations",
+    "deploy": "keystone build && keystone prisma migrate deploy",
     "build": "keystone build",
-    "postinstall": "keystone build --no-ui --frozen"
   },
     "resolutions": {
     "next": "13.3.4"

@@ -16,6 +16,7 @@ import { withAuth, session } from './auth';
 
 export default withAuth(
   config({
+  secureCookies: false,
   server: {
       cors: {
         origin: process.env.FRONTEND_URL,
