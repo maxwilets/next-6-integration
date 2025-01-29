@@ -321,6 +321,9 @@ var keystone_default = withAuth(
       url: process.env.DATABASE_URL,
       useMigrations: true
     },
+    ui: {
+      isAccessAllowed: () => true
+    },
     lists,
     session
   })
