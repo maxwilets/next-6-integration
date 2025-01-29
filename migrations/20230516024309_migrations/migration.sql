@@ -119,27 +119,30 @@ CREATE TABLE `Tag` (
 
 -- CreateTable
 CREATE TABLE `_Education_photo` (
+    `id` VARCHAR(191) NOT NULL,
     `A` VARCHAR(191) NOT NULL,
     `B` VARCHAR(191) NOT NULL,
-
+    PRIMARY KEY (`id`),
     UNIQUE INDEX `_Education_photo_AB_unique`(`A`, `B`),
     INDEX `_Education_photo_B_index`(`B`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 -- CreateTable
 CREATE TABLE `_Portfolio_technology` (
+    `id` VARCHAR(191) NOT NULL,
     `A` VARCHAR(191) NOT NULL,
     `B` VARCHAR(191) NOT NULL,
-
+    PRIMARY KEY (`id`),
     UNIQUE INDEX `_Portfolio_technology_AB_unique`(`A`, `B`),
     INDEX `_Portfolio_technology_B_index`(`B`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 -- CreateTable
 CREATE TABLE `_Post_tags` (
+    `id` VARCHAR(191) NOT NULL,
     `A` VARCHAR(191) NOT NULL,
     `B` VARCHAR(191) NOT NULL,
-
+    PRIMARY KEY (`id`),
     UNIQUE INDEX `_Post_tags_AB_unique`(`A`, `B`),
     INDEX `_Post_tags_B_index`(`B`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
